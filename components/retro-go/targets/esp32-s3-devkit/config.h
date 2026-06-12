@@ -19,11 +19,13 @@
 #define RG_PIN_TFT_RST      4
 
 // Karta SD na współdzielonym SPI
+#define RG_STORAGE_ROOT     "/sd"
 #define RG_STORAGE_DRIVER   "spi"
 #define RG_PIN_SD_CS        11
 #define RG_PIN_SD_SCLK      14
 #define RG_PIN_SD_MOSI      13
 #define RG_PIN_SD_MISO      12
+
 
 // Przyciski cyfrowe (bez rezystorów)
 #define RG_GAMEPAD_DRIVER   "gpio"
