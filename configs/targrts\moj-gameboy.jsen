@@ -1,0 +1,41 @@
+{
+    "target": "moj-gameboy",
+    "title": "Moj ESP32-S3 Game Boy",
+    "launches": "retro-go",
+    "capabilities": [
+        "battery"
+    ],
+    "components": {
+        "display": {
+            "driver": "st7789",
+            "width": 320,
+            "height": 240,
+            "rotation": 1,
+            "backlight": -1,
+            "pin_sclk": 14,
+            "pin_mosi": 13,
+            "pin_miso": 12,
+            "pin_cs": 15,
+            "pin_dc": 2,
+            "pin_rst": 4
+        },
+        "sdcard": {
+            "slot": "spi",
+            "pin_cs": 11,
+            "pin_sclk": 14,
+            "pin_mosi": 13,
+            "pin_miso": 12
+        },
+        "gamepad": {
+            "driver": "gpio",
+            "pin_up": 1,
+            "pin_down": 5,
+            "pin_left": 6,
+            "pin_right": 7,
+            "pin_a": 10,
+            "pin_b": 9,
+            "pin_start": 3,
+            "pin_select": 8
+        }
+    }
+}
