@@ -5,18 +5,18 @@
 
 // Ekran ST7789
 // OSTATECZNA KONFIGURACJA DLA PEŁNEGO EKRANU
-#define RG_DISPLAY_DRIVER ST7789      // Ten sterownik działa (image_4.png)
-#define RG_SCREEN_WIDTH 320            // Wracamy do poziomu
+#define RG_DISPLAY_DRIVER ST7789
+#define RG_SCREEN_WIDTH 320
 #define RG_SCREEN_HEIGHT 240
+#define RG_SCREEN_HOST SPI2_HOST      // <-- TEJ LINIJKI ZABRAKŁO!
 #define RG_GPIO_LCD_DC 2
-#define RG_GPIO_LCD_MISO -1           // Wyłączone
+#define RG_GPIO_LCD_MISO -1
 #define RG_GPIO_LCD_MOSI 13
 #define RG_GPIO_LCD_CLK 14
 #define RG_GPIO_LCD_CS 15
-#define RG_SCREEN_SPEED SPI_MASTER_FREQ_20M // Wolna, stabilna prędkość
-// Poniższe dwie linijki naprawią resztę:
-#define RG_DISPLAY_ROTATION 3          // Wymuś obrót poziomy (landscape)
-#define RG_DISPLAY_INVERT 1           // Napraw kolory (różowy -> czarny)
+#define RG_SCREEN_SPEED SPI_MASTER_FREQ_20M
+#define RG_DISPLAY_ROTATION 3
+#define RG_DISPLAY_INVERT 1
 
  
 
