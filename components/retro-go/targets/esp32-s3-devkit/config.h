@@ -11,6 +11,9 @@
 #define RG_GPIO_LCD_MISO 12
 #define RG_GPIO_LCD_MOSI 13
 #define RG_GPIO_LCD_CLK 14
+#define RG_GPIO_LCD_CS 15
+#define RG_SCREEN_HOST SPI2_HOST
+#define RG_SCREEN_SPEED SPI_MASTER_FREQ_40M
 
 // Piny ekranu (Twoje sprawdzone)
 #define RG_PIN_TFT_SCLK     14
