@@ -4,11 +4,10 @@
 #define RG_TARGET_TITLE "Moj ESP32-S3 Game Boy"
 
 // Ekran ST7789
-#define RG_DISPLAY_DRIVER   "st7789"
-#define RG_DISPLAY_WIDTH    320
-#define RG_DISPLAY_HEIGHT   240
-#define RG_DISPLAY_ROTATION 1
-#define RG_DISPLAY_BACKLIGHT -1
+#define RG_DISPLAY_DRIVER st7789
+#define RG_SCREEN_WIDTH 320
+#define RG_SCREEN_HEIGHT 240
+#define RG_GPIO_LCD_DC 2
 
 // Piny ekranu (Twoje sprawdzone)
 #define RG_PIN_TFT_SCLK     14
