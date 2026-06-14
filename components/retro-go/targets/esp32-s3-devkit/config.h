@@ -25,15 +25,17 @@
 
 
 
-
-
- 
-
 // Ustawienia czytnika kart SD
+#define RG_STORAGE_DRIVER 1
+#define RG_STORAGE_HOST SPI3_HOST
 #define RG_GPIO_SD_MISO 12
 #define RG_GPIO_SD_MOSI 11
 #define RG_GPIO_SD_CLK 10
 #define RG_GPIO_SD_CS 9
+
+
+ 
+
 
 // Ustawienia przycisków (Krzyżak i akcje)
 #define RG_GPIO_GAMEPAD_UP 4
