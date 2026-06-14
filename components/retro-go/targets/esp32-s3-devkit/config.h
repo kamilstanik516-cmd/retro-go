@@ -26,8 +26,11 @@
 
 
 // Ustawienia czytnika kart SD
+
+// Ustawienia czytnika kart SD
 #define RG_STORAGE_DRIVER 1
 #define RG_STORAGE_HOST SPI3_HOST
+#define RG_STORAGE_ROOT "/sd"
 #define RG_GPIO_SD_MISO 12
 #define RG_GPIO_SD_MOSI 11
 #define RG_GPIO_SD_CLK 10
