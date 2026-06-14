@@ -4,18 +4,17 @@
 #define RG_TARGET_TITLE "Moj ESP32-S3 Game Boy"
 
 // Ekran ST7789
-#define RG_SCREEN_DRIVER 0
-#define RG_DISPLAY_ILI9341            // TO JEST KLUCZ! Aktywuje sprzętowy pakiet startowy
+#define RG_DISPLAY_DRIVER st7789
 #define RG_SCREEN_WIDTH 320
 #define RG_SCREEN_HEIGHT 240
-#define RG_SCREEN_HOST SPI2_HOST     
 #define RG_GPIO_LCD_DC 2
 #define RG_GPIO_LCD_MISO -1
 #define RG_GPIO_LCD_MOSI 13
 #define RG_GPIO_LCD_CLK 14
 #define RG_GPIO_LCD_CS 15
+#define RG_SCREEN_HOST SPI2_HOST
 #define RG_SCREEN_SPEED SPI_MASTER_FREQ_20M
-// Nie dodawaj tu już żadnych ROTATE ani INVERT.
+
 
 
  
