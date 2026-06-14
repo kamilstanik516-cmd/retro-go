@@ -29,33 +29,21 @@
 
  
 
-// Piny ekranu (Twoje sprawdzone)
-#define RG_PIN_TFT_SCLK     14
-#define RG_PIN_TFT_MOSI     13
-#define RG_PIN_TFT_MISO     12
-#define RG_PIN_TFT_CS       15
-#define RG_PIN_TFT_DC       2
-#define RG_PIN_TFT_RST      4
+// Ustawienia czytnika kart SD
+#define RG_GPIO_SD_MISO 12
+#define RG_GPIO_SD_MOSI 11
+#define RG_GPIO_SD_CLK 10
+#define RG_GPIO_SD_CS 9
 
-// Karta SD na współdzielonym SPI
-#define RG_STORAGE_ROOT     "/sd"
-#define RG_STORAGE_DRIVER   "spi"
-#define RG_PIN_SD_CS        11
-#define RG_PIN_SD_SCLK      14
-#define RG_PIN_SD_MOSI      13
-#define RG_PIN_SD_MISO      12
-
-
-// Przyciski cyfrowe (bez rezystorów)
-#define RG_GAMEPAD_DRIVER   "gpio"
-#define RG_PIN_JOY_UP       1
-#define RG_PIN_JOY_DOWN     5
-#define RG_PIN_JOY_LEFT     6
-#define RG_PIN_JOY_RIGHT    7
-#define RG_PIN_BTN_A        10
-#define RG_PIN_BTN_B        9
-#define RG_PIN_BTN_START    3
-#define RG_PIN_BTN_SELECT   8
+// Ustawienia przycisków (Krzyżak i akcje)
+#define RG_GPIO_GAMEPAD_UP 4
+#define RG_GPIO_GAMEPAD_DOWN 5
+#define RG_GPIO_GAMEPAD_LEFT 6
+#define RG_GPIO_GAMEPAD_RIGHT 7
+#define RG_GPIO_GAMEPAD_A 8
+#define RG_GPIO_GAMEPAD_B 17
+#define RG_GPIO_GAMEPAD_SELECT 18
+#define RG_GPIO_GAMEPAD_START 21
 
 #define RG_BATTERY_CALC_PERCENT(v) ((v) > 4000 ? 100 : (v) < 3200 ? 0 : ((v) - 3200) / 8)
 
