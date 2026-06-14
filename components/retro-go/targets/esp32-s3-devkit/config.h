@@ -16,12 +16,13 @@
 #define RG_SCREEN_SPEED SPI_MASTER_FREQ_20M
 
 // Ręczna sekwencja startowa (Inwersja i Rotacja)
-  #define RG_SCREEN_INIT() \
+ #define RG_SCREEN_INIT() \
     ILI9341_CMD(0x11); \
-    ILI9341_CMD(0x36, 0xA0); \
+    ILI9341_CMD(0x36, 0xA8); \
     ILI9341_CMD(0x3A, 0x55); \
-    ILI9341_CMD(0x20); \
+    ILI9341_CMD(0x21); \
     ILI9341_CMD(0x29);
+
 
 
 
